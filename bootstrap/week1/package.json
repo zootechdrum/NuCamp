@@ -1,0 +1,29 @@
+{
+  "name": "nucamp",
+  "version": "1.0.0",
+  "description": "This is a website for a fictional website.",
+  "main": "index.html",
+  "scripts": {
+    "lite": "lite-server",
+    "start":"npm rin lite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zootechdrum/nucamp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zootechdrum/nucamp/issues"
+  },
+  "homepage": "https://github.com/zootechdrum/nucamp#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  }
+}
