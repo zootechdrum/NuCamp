@@ -19,4 +19,9 @@ font size of the page directly from google settings.
 
 ## What is the difference between using an icon font cs Roster Img ?
 
-Icon fonts and SVG are the new standard in web development. However, SVG's are becoming the standard due to its smaller file size. The browser does not have to import large text files when importing SVG's. SVG's are composed entirely of code making them easier to work with. 
+Icon fonts and SVG are the new standard in web development. However, SVG's are becoming the standard due to its smaller file size. The browser does not have to import large text files when importing SVG's. SVG's are composed entirely of code making them easier to work with.
+
+## How to remove Node_Modules from github
+
+Follow this instruction and it should remove the node_module folder
+https://gist.github.com/lmcneel/45594e550a3403d589bdcaad38138a83
