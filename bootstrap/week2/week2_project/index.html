@@ -7,17 +7,19 @@
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
-      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans"
     />
 
     <!-- Additional CSS, after Bootstrap -->
     <link
       rel="stylesheet"
       href="node_modules/font-awesome/css/font-awesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
     <link
       rel="stylesheet"
@@ -36,15 +38,115 @@
             <h2>a better way to camp</h2>
           </div>
           <div class="col-md-4 col-xl-2 mt-4">
-            <a href="#reserve-form"
-              ><button type="button" class="btn btn-primary">
-                Reserve Campsite
-              </button></a
+            <button
+              type="button"
+              data-toggle="modal"
+              data-target="#reserveModal"
+              class="btn btn-primary"
             >
+              Reserve Campsite
+            </button>
           </div>
         </div>
       </div>
     </header>
+
+    <div
+      class="modal fade"
+      id="reserveModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="reserveModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header bg-info text-white">
+            <h5 class="modal-title" id="reserveModalLabel">
+              Reserve a Campsite
+            </h5>
+
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="card-body">
+            <form id="reserve-form" action="">
+              <div class="row form-group">
+                <label class="col-sm-6 col-form-label" for="inputGroupSelect01"
+                  >Number of Campers</label
+                >
+                <div class="col">
+                  <select class="custom-select" id="inputGroupSelect01">
+                    <option selected>Select</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row form-group">
+                <label
+                  class="col-sm-6 col-form-label"
+                  for="date"
+                  placeholder="mm/dd/yyyy"
+                  >Date</label
+                >
+                <div class="col-sm-6">
+                  <input
+                    type="date"
+                    class="form-control"
+                    id="date"
+                    name="date"
+                  />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-form-label col-sm-6">Campsite Type</label>
+                <div
+                  class="col btn-group btn-group-toggle"
+                  data-toggle="buttons"
+                >
+                  <label for="siteTent" class="btn btn-success">
+                    <input
+                      name="siteType"
+                      type="radio"
+                      id="siteTent"
+                      value="tent"
+                    />Tent
+                  </label>
+                  <label for="siteRV" class="btn btn-primary">
+                    <input
+                      name="siteType"
+                      type="radio"
+                      id="siteRV"
+                      value="RV"
+                    />RV
+                  </label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <button class="btn btn-primary">Search</button>
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
       <div class="container">
@@ -229,8 +331,20 @@
     </footer>
 
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
