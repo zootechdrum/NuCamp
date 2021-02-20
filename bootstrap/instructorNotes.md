@@ -25,3 +25,10 @@ Icon fonts and SVG are the new standard in web development. However, SVG's are b
 
 Follow this instruction and it should remove the node_module folder
 https://gist.github.com/lmcneel/45594e550a3403d589bdcaad38138a83
+
+## A good site explaining Media queries
+
+https://sympli.io/blog/a-quick-guide-to-css-for-printable-webpages/
+
+## Mobile first design. 
+https://www.w3schools.com/css/css_rwd_mediaqueries.asp
