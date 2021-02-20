@@ -32,3 +32,6 @@ https://sympli.io/blog/a-quick-guide-to-css-for-printable-webpages/
 
 ## Mobile first design. 
 https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+
+# Self align in bootstrap
+https://getbootstrap.com/docs/5.0/utilities/flex/#align-items
