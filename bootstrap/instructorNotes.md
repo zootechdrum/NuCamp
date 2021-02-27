@@ -35,3 +35,7 @@ https://www.w3schools.com/css/css_rwd_mediaqueries.asp
 
 # Self align in bootstrap
 https://getbootstrap.com/docs/5.0/utilities/flex/#align-items
+
+
+# most common types of buttons link 
+https://stackoverflow.com/questions/469059/button-vs-input-type-button-which-to-use?rq=1
