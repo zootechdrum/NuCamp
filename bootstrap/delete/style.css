@@ -1,0 +1,85 @@
+/* index- masthead */
+.masthead {
+    height: 90vh;
+    min-height: 500px;
+    background-image: url(img/header-plant.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+.masthead-text {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+/* index- best seller products */
+.product-card {
+    border: none;
+}
+.product-card-img {
+    width: 100%;
+    height: 25vw;
+    width: 40vh;
+    object-fit: cover;
+}
+/* index- care guide */
+.card-image {
+    position: relative;
+    flex-shrink: 0;
+    height: 45rem;
+}
+.equal {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+.image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+}
+.image-grid {
+    height: 45rem;
+}
+
+.equal::before {
+    display:block;
+    content:"";
+    width:100%;
+    padding-top:100%;
+}
+
+::before, ::after {
+    box-sizing:border-box;
+}
+
+card-image a {
+    display:block;
+}
+
+.image::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content:"";
+}
+
+img {
+    max-width:100%;
+}
+
+img {
+    vertical-align: middle;
+    border-style:none;
+}
+
+.row:not(:last-child) {
+    margin-bottom: 2.5rem;
+}
